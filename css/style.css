@@ -61,6 +61,12 @@ code {
 	color: var(--subtext1);
 }
 
+footer {
+	text-align: end;
+	font-size: small;
+	opacity: 50%;
+}
+
 ul {
 	list-style-type: disc;
 }
