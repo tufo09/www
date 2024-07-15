@@ -97,3 +97,20 @@ ul {
 		width: var(--width);
 	}
 }
+
+/* WARNING: freaky mode */
+:root:has(#freaky:checked)::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600px%22%20height%3D%22200px%22%20%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%3ClinearGradient%20id%3D%22lgrad%22%20x1%3D%2285%25%22%20y1%3D%220%25%22%20x2%3D%2215%25%22%20y2%3D%22100%25%22%20%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20style%3D%22stop-color%3Argb(154%2C65%2C40)%3Bstop-opacity%3A1.00%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20style%3D%22stop-color%3Argb(116%2C36%2C94)%3Bstop-opacity%3A1.00%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20style%3D%22stop-color%3Argb(59%2C56%2C132)%3Bstop-opacity%3A1.00%22%20%2F%3E%0A%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23lgrad)%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	opacity: 0.6;
+	pointer-events: none;
+}
