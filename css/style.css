@@ -3,18 +3,12 @@
 	--base: #1e1e2e;
 	--text: #cdd6f4;
 	--crust: #11111b;
-	--surface0: #313244;
-	--subtext0: #a6adc8;
-	--subtext1: #bac2de;
 	--pink: #f5c2e7;
-	--rosewater: #f5e0dc;
-	--blue: #89b4fa;
-	--mauve: #cba6f7;
 }
 
 :root,
 code {
-	font-family: "Hack", "Hack Nerd Font", "JetBrains Mono", "JetBrainsMono Nerd Font", monospace, sans-serif;
+	font-family: "Roboto Mono", monospace, sans-serif;
 }
 
 :root {
